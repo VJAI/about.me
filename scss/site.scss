@@ -1,9 +1,25 @@
+$heading-font-family:       'Bebas Neue', cursive;
+$body-font-family:          'PT Sans', sans-serif;
+
+$body-bg-color:             #fafafa;
+$body-color:                #636363;
+$h1-color:                  #adb8b5;
+
+$heading-letter-spacing:    2px;
+
+:root {
+  font-size: 16px;
+}
+
 body {
   padding: 0;
   margin: 0;
 }
 
 body {
+  font-family: $body-font-family;
+  background-color: $body-bg-color;
+  color: $body-color;
   display: flex;
 
   .left {
@@ -15,11 +31,54 @@ body {
   }
 
   .right {
-    padding: 20px;
+    padding: 20px 80px;
     flex-grow: 1;
   }
 }
 
 .head {
   text-align: center;
+  padding: 1rem 0;
+
+  h1 {
+    margin-bottom: 1rem;
+    color: #ffde08;
+    text-shadow: 1px 1px $h1-color;
+  }
+
+  p {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+h1 {
+  font-size: 500%;
+  color: $h1-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  letter-spacing: $heading-letter-spacing;
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  border-bottom: dashed 4px #ffde08;
+  font-size: 200%;
+  color: $h1-color;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.intro {
+  font-size: 24px;
 }
