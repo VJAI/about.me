@@ -109,3 +109,48 @@ h2 {
 .intro p::first-letter {
   font-size: 40px;
 }
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .75rem;
+
+  .chip {
+    cursor: pointer;
+    background: #ffde08;
+    border-radius: 3px 0 0 3px;
+    color: #666;
+    display: inline-block;
+    height: 1.625rem;
+    line-height: 1.625rem;
+    padding: 0 1rem 0 1.25rem;
+    position: relative;
+    margin: .625rem .5rem 0 0;
+    transition: all .25s;
+
+    &::before {
+      background: #fff;
+      border-radius: .625rem;
+      box-shadow: inset 0 1px rgba(0,0,0,.25);
+      content: '';
+      height: .375rem;
+      left: .5rem;
+      position: absolute;
+      width: .375rem;
+      top: .65rem;
+      transition: all .25s;
+    }
+
+    &::after {
+      background: #fff;
+      border-bottom: .8125rem solid transparent;
+      border-left: .625rem solid #ffde08;
+      border-top: .8125rem solid transparent;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: all .25s;
+    }
+  }
+}
