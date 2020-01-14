@@ -26,7 +26,8 @@ body {
     width: 40%;
 
     img {
-      max-width: 100%;
+      object-fit: cover;
+      height: 100vh;
     }
   }
 
@@ -38,10 +39,9 @@ body {
 
 .head {
   text-align: center;
-  padding: 1rem 0;
+  margin: 2rem 0 4rem 0;
 
   h1 {
-    margin-bottom: 1rem;
     color: #ffde08;
     text-shadow: 1px 1px $h1-color;
   }
@@ -51,6 +51,7 @@ body {
     letter-spacing: 1px;
     margin: 0;
     font-size: 14px;
+    font-weight: bold;
   }
 }
 
@@ -81,4 +82,30 @@ h2 {
 
 .intro {
   font-size: 24px;
+}
+
+.social-links {
+  display: flex;
+  width: 650px;
+  margin: 2rem auto;
+  font-size: 12px;
+  opacity: 0.7;
+
+  > div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 0.25rem;
+    }
+  }
+}
+
+.intro {
+  margin-bottom: 4rem;
+}
+
+.intro p::first-letter {
+  font-size: 40px;
 }
