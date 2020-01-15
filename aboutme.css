@@ -1,113 +1,103 @@
 :root {
   font-size: 16px; }
 
-body {
-  padding: 0;
-  margin: 0; }
-
-body {
-  font-family: "PT Sans", sans-serif;
-  background-color: #fafafa;
-  color: #636363;
-  display: flex; }
-  body .left {
-    width: 40%; }
-    body .left img {
-      object-fit: cover;
-      height: 100vh; }
-  body .right {
-    padding: 20px 80px;
-    flex-grow: 1; }
-
-.head {
-  text-align: center;
-  margin: 2rem 0 4rem 0; }
-  .head h1 {
-    color: #ffde08;
-    text-shadow: 1px 1px #adb8b5; }
-  .head p {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0;
-    font-size: 14px;
-    font-weight: bold; }
-
 h1 {
   font-size: 500%;
-  color: #adb8b5; }
+  color: #adb8b5;
+  margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 2px;
   margin-top: 0; }
 
-h1 {
-  margin-bottom: 0; }
-
 h2 {
   border-bottom: dashed 4px #ffde08;
   font-size: 200%;
   color: #adb8b5; }
 
-.section {
-  margin-bottom: 4rem; }
-
-.intro {
-  font-size: 24px; }
-
-.social-links {
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #fafafa;
+  color: #636363;
   display: flex;
-  width: 650px;
-  margin: 2rem auto;
-  font-size: 12px;
-  opacity: 0.7; }
-  .social-links > div {
-    flex-grow: 1;
+  padding: 0;
+  margin: 0; }
+  body .left {
+    width: 40%; }
+    body .left img {
+      object-fit: cover;
+      height: 100vh; }
+  body .right {
+    padding: 1.25rem 5rem;
+    flex-grow: 1; }
+  body .head {
+    text-align: center;
+    margin: 2rem 0 4rem 0; }
+    body .head h1 {
+      color: #ffde08;
+      text-shadow: 1px 1px #adb8b5; }
+    body .head p {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+      font-size: 0.875rem;
+      font-weight: bold; }
+  body .section {
+    margin-bottom: 4rem; }
+  body .intro {
+    margin-bottom: 4rem; }
+    body .intro p {
+      font-size: 1.5rem; }
+    body .intro p::first-letter {
+      font-size: 2.5rem;
+      font-family: "Bebas Neue", cursive; }
+  body .social-links {
     display: flex;
-    align-items: center; }
-    .social-links > div .icon {
-      margin-right: 0.25rem; }
-
-.intro {
-  margin-bottom: 4rem; }
-
-.intro p::first-letter {
-  font-size: 40px; }
-
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: .75rem; }
-  .chips .chip {
-    cursor: pointer;
-    background: #ffde08;
-    border-radius: 3px 0 0 3px;
-    color: #666;
-    display: inline-block;
-    height: 1.625rem;
-    line-height: 1.625rem;
-    padding: 0 1rem 0 1.25rem;
-    position: relative;
-    margin: .625rem .5rem 0 0;
-    transition: all .25s; }
-    .chips .chip::before {
-      background: #fff;
-      border-radius: .625rem;
-      box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-      content: '';
-      height: .375rem;
-      left: .5rem;
-      position: absolute;
-      width: .375rem;
-      top: .65rem;
+    width: 40.625rem;
+    margin: 2rem auto;
+    font-size: 0.75rem;
+    opacity: 0.7; }
+    body .social-links > div {
+      flex-grow: 1;
+      display: flex;
+      align-items: center; }
+      body .social-links > div .icon {
+        margin-right: 0.25rem; }
+  body .chips {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .75rem; }
+    body .chips .chip {
+      cursor: pointer;
+      background: #636363;
+      border-radius: 3px 0 0 3px;
+      color: #fafafa;
+      display: inline-block;
+      height: 1.625rem;
+      line-height: 1.625rem;
+      padding: 0 1rem 0 1.25rem;
+      position: relative;
+      margin: .625rem .5rem 0 0;
       transition: all .25s; }
-    .chips .chip::after {
-      background: #fff;
-      border-bottom: .8125rem solid transparent;
-      border-left: .625rem solid #ffde08;
-      border-top: .8125rem solid transparent;
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: all .25s; }
+      body .chips .chip::before {
+        background: #fafafa;
+        border-radius: .625rem;
+        box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+        content: '';
+        height: .375rem;
+        left: .5rem;
+        position: absolute;
+        width: .375rem;
+        top: .65rem;
+        transition: all .25s; }
+      body .chips .chip::after {
+        background: #fafafa;
+        border-bottom: .8125rem solid transparent;
+        border-left: 0.625rem solid #636363;
+        border-top: .8125rem solid transparent;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all .25s; }
