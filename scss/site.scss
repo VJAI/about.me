@@ -5,14 +5,19 @@ $brand-color:                 #ffde08;
 $body-bg-color:               #fafafa;
 $body-color:                  #636363;
 $h1-color:                    #adb8b5;
+$h4-color:                    #909e9a;
 $heading-letter-spacing:      2px;
+$h1-font-size:                5rem;
+$h2-font-size:                2rem;
+$h3-font-size:                1.5rem;
+$h4-font-size:                1rem;
 
 :root {
   font-size: $base-font-size;
 }
 
 h1 {
-  font-size: 500%;
+  font-size: $h1-font-size;
   color: $h1-color;
   margin-bottom: 0;
 }
@@ -25,8 +30,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   border-bottom: dashed 4px $brand-color;
-  font-size: 200%;
+  font-size: $h2-font-size;
   color: $h1-color;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+  color: $h4-color;
 }
 
 body {
@@ -71,6 +85,41 @@ body {
 
   .section {
     margin-bottom: 4rem;
+
+    .top-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      > * {
+        flex-grow: 1;
+      }
+    }
+
+    .experience {
+      margin-bottom: 3rem;
+
+      .manager {
+        font-size: 0.875rem;
+
+        span:first-child {
+          font-weight: bold;
+        }
+
+        span:last-child {
+          font-style: italic;
+        }
+      }
+    }
+
+    .duration {
+      text-align: right;
+      font-size: 0.875rem;
+    }
+
+    h3, h4 {
+      margin-bottom: 0;
+    }
   }
 
   .intro {
@@ -145,6 +194,15 @@ body {
         right: 0;
         top: 0;
         transition: all .25s;
+      }
+
+      &:hover {
+        background-color: $brand-color;
+        color: $body-color;
+
+        &::after {
+          border-left: .625rem solid $brand-color;
+        }
       }
     }
   }

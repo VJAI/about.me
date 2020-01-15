@@ -2,7 +2,7 @@
   font-size: 16px; }
 
 h1 {
-  font-size: 500%;
+  font-size: 5rem;
   color: #adb8b5;
   margin-bottom: 0; }
 
@@ -13,8 +13,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   border-bottom: dashed 4px #ffde08;
-  font-size: 200%;
+  font-size: 2rem;
   color: #adb8b5; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1rem;
+  color: #909e9a; }
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -45,6 +52,25 @@ body {
       font-weight: bold; }
   body .section {
     margin-bottom: 4rem; }
+    body .section .top-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem; }
+      body .section .top-row > * {
+        flex-grow: 1; }
+    body .section .experience {
+      margin-bottom: 3rem; }
+      body .section .experience .manager {
+        font-size: 0.875rem; }
+        body .section .experience .manager span:first-child {
+          font-weight: bold; }
+        body .section .experience .manager span:last-child {
+          font-style: italic; }
+    body .section .duration {
+      text-align: right;
+      font-size: 0.875rem; }
+    body .section h3, body .section h4 {
+      margin-bottom: 0; }
   body .intro {
     margin-bottom: 4rem; }
     body .intro p {
@@ -101,3 +127,8 @@ body {
         right: 0;
         top: 0;
         transition: all .25s; }
+      body .chips .chip:hover {
+        background-color: #ffde08;
+        color: #636363; }
+        body .chips .chip:hover::after {
+          border-left: 0.625rem solid #ffde08; }
