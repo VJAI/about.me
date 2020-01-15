@@ -31,13 +31,17 @@ body {
   padding: 0;
   margin: 0; }
   body .left {
-    width: 40%; }
+    width: 40%;
+    box-shadow: 5px 0 5px -5px #ccc;
+    position: fixed; }
     body .left img {
       object-fit: cover;
-      height: 100vh; }
+      height: 100vh;
+      position: fixed; }
   body .right {
     padding: 1.25rem 5rem;
-    flex-grow: 1; }
+    flex-grow: 1;
+    margin-left: 40%; }
   body .head {
     text-align: center;
     margin: 2rem 0 4rem 0; }
@@ -52,6 +56,8 @@ body {
       font-weight: bold; }
   body .section {
     margin-bottom: 4rem; }
+    body .section h3, body .section h4 {
+      margin-bottom: 0; }
     body .section .top-row {
       display: flex;
       align-items: center;
@@ -69,8 +75,30 @@ body {
     body .section .duration {
       text-align: right;
       font-size: 0.875rem; }
-    body .section h3, body .section h4 {
-      margin-bottom: 0; }
+    body .section .language-table {
+      width: 500px;
+      border: solid 1px #eee;
+      border-radius: 5px; }
+      body .section .language-table thead th {
+        text-align: center;
+        border-bottom: solid 1px #eee;
+        padding: 10px; }
+      body .section .language-table tbody td {
+        padding: 10px; }
+      body .section .language-table tbody td.center {
+        text-align: center; }
+    body .section .interests {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap; }
+      body .section .interests li {
+        padding: 5px 8px;
+        background-color: rgba(255, 222, 8, 0.5);
+        margin-right: 1rem;
+        border-radius: 5px;
+        margin-bottom: 0.5rem; }
   body .intro {
     margin-bottom: 4rem; }
     body .intro p {
@@ -79,17 +107,23 @@ body {
       font-size: 2.5rem;
       font-family: "Bebas Neue", cursive; }
   body .social-links {
-    display: flex;
-    width: 40.625rem;
-    margin: 2rem auto;
+    display: inline-flex;
+    margin: 3rem auto 2rem auto;
     font-size: 0.75rem;
     opacity: 0.7; }
     body .social-links > div {
       flex-grow: 1;
       display: flex;
       align-items: center; }
+      body .social-links > div:after {
+        content: "|";
+        padding-right: 1.5rem;
+        padding-left: 1.5rem; }
       body .social-links > div .icon {
         margin-right: 0.25rem; }
+      body .social-links > div:last-child:after {
+        content: '';
+        padding: 0; }
   body .chips {
     display: flex;
     flex-wrap: wrap;
