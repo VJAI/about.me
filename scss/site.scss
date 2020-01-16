@@ -1,16 +1,34 @@
 $heading-font-family:         'Bebas Neue', cursive;
 $body-font-family:            'PT Sans', sans-serif;
+
+// Ratio: 1.333 (4:3)
+$x5l-size:                    5.61rem;
+$x4l-size:                    4.209rem;
+$xxxl-size:                   3.157rem;
+$xxl-size:                    2.369rem;
+$xl-size:                     1.777rem;
+$lg-size:                     1.333rem;
+$md-size:                     1rem;
+$sm-size:                     0.75rem;
+$xs-size:                     0.563rem;
+$xxs-size:                    0.422rem;
+$xxxs-size:                   0.317rem;
+$x4s-size:                    0.238rem;
+
+// Colors
+$yellow:                      #ffde08;
+$alabaster:                   #fafafa;
+$dove-gray:                   #636363;
+$edward:                      #adb8b5;
+$pewter:                      #909e9a;
+
+$h1-font-size:                $x5l-size;
+$h2-font-size:                $xxl-size;
+$h3-font-size:                $lg-size;
+$h4-font-size:                $md-size;
+
 $base-font-size:              16px;
-$brand-color:                 #ffde08;
-$body-bg-color:               #fafafa;
-$body-color:                  #636363;
-$h1-color:                    #adb8b5;
-$h4-color:                    #909e9a;
 $heading-letter-spacing:      2px;
-$h1-font-size:                5rem;
-$h2-font-size:                2rem;
-$h3-font-size:                1.5rem;
-$h4-font-size:                1rem;
 
 :root {
   font-size: $base-font-size;
@@ -18,7 +36,7 @@ $h4-font-size:                1rem;
 
 h1 {
   font-size: $h1-font-size;
-  color: $h1-color;
+  color: $edward;
   margin-bottom: 0;
 }
 
@@ -29,9 +47,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  border-bottom: dashed 4px $brand-color;
+  border-bottom: dashed 4px $yellow;
   font-size: $h2-font-size;
-  color: $h1-color;
+  color: $edward;
 }
 
 h3 {
@@ -40,13 +58,13 @@ h3 {
 
 h4 {
   font-size: $h4-font-size;
-  color: $h4-color;
+  color: $pewter;
 }
 
 body {
   font-family: $body-font-family;
-  background-color: $body-bg-color;
-  color: $body-color;
+  background-color: $alabaster;
+  color: $dove-gray;
   display: flex;
   padding: 0;
   margin: 0;
@@ -54,41 +72,68 @@ body {
   .left {
     width: 40%;
     box-shadow: 5px 0 5px -5px #ccc;
-    position: fixed;
 
     img {
       object-fit: cover;
       height: 100vh;
-      position: fixed;
     }
   }
 
   .right {
-    padding: 1.25rem 5rem;
+    padding: $lg-size $x5l-size;
     flex-grow: 1;
-    margin-left: 40%;
   }
 
   .head {
     text-align: center;
-    margin: 2rem 0 4rem 0;
+    margin: $xxl-size 0 $x4l-size 0;
 
     h1 {
-      color: $brand-color;
-      text-shadow: 1px 1px $h1-color;
+      color: $yellow;
+      text-shadow: 1px 1px $edward;
     }
 
     p {
       text-transform: uppercase;
       letter-spacing: 1px;
       margin: 0;
-      font-size: 0.875rem;
+      font-size: $md-size;
       font-weight: bold;
+    }
+
+    .social-links {
+      display: inline-flex;
+      margin: $xxxl-size auto $xl-size auto;
+      font-size: $sm-size;
+      opacity: 0.7;
+
+      > div {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+
+        &:after {
+          content: "|";
+          padding-right: $lg-size;
+          padding-left: $lg-size;
+        }
+
+        .icon {
+          margin-right: 0.25rem;
+        }
+
+        &:last-child {
+          &:after {
+            content: '';
+            padding: 0;
+          }
+        }
+      }
     }
   }
 
   .section {
-    margin-bottom: 4rem;
+    margin-bottom: $x4l-size;
 
     h3, h4 {
       margin-bottom: 0;
@@ -105,7 +150,7 @@ body {
     }
 
     .experience {
-      margin-bottom: 3rem;
+      margin-bottom: $xxxl-size;
 
       .manager {
         font-size: 0.875rem;
@@ -179,36 +224,6 @@ body {
     }
   }
 
-  .social-links {
-    display: inline-flex;
-    margin: 3rem auto 2rem auto;
-    font-size: 0.75rem;
-    opacity: 0.7;
-
-    > div {
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-
-      &:after {
-        content: "|";
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-      }
-
-      .icon {
-        margin-right: 0.25rem;
-      }
-
-      &:last-child {
-        &:after {
-          content: '';
-          padding: 0;
-        }
-      }
-    }
-  }
-
   .chips {
     display: flex;
     flex-wrap: wrap;
@@ -216,9 +231,9 @@ body {
 
     .chip {
       cursor: pointer;
-      background: $body-color;
+      background: $dove-gray;
       border-radius: 3px 0 0 3px;
-      color: $body-bg-color;
+      color: $alabaster;
       display: inline-block;
       height: 1.625rem;
       line-height: 1.625rem;
@@ -228,7 +243,7 @@ body {
       transition: all .25s;
 
       &::before {
-        background: $body-bg-color;
+        background: $alabaster;
         border-radius: .625rem;
         box-shadow: inset 0 1px rgba(0,0,0,.25);
         content: '';
@@ -241,9 +256,9 @@ body {
       }
 
       &::after {
-        background: $body-bg-color;
+        background: $alabaster;
         border-bottom: .8125rem solid transparent;
-        border-left: .625rem solid $body-color;
+        border-left: .625rem solid $dove-gray;
         border-top: .8125rem solid transparent;
         content: '';
         position: absolute;
@@ -253,11 +268,11 @@ body {
       }
 
       &:hover {
-        background-color: $brand-color;
-        color: $body-color;
+        background-color: $yellow;
+        color: $dove-gray;
 
         &::after {
-          border-left: .625rem solid $brand-color;
+          border-left: .625rem solid $yellow;
         }
       }
     }
