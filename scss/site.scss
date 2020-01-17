@@ -254,7 +254,7 @@ body {
 
         li {
           padding: 5px 8px;
-          background-color: rgba(255, 222, 8, 0.5);
+          background-color: lighten($yellow, 20%);
           margin-right: 1rem;
           border-radius: 5px;
           margin-bottom: 0.5rem;
