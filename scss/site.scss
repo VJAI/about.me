@@ -30,6 +30,8 @@ $h4-font-size:                $md-size;
 $base-font-size:              16px;
 $heading-letter-spacing:      2px;
 
+$image-width:                 42.86%;
+
 :root {
   font-size: $base-font-size;
 }
@@ -70,17 +72,17 @@ body {
   margin: 0;
 
   .left {
-    width: 40%;
+    width: $image-width;
+    height: 100vh;
     box-shadow: 5px 0 5px -5px #ccc;
-
-    img {
-      object-fit: cover;
-      height: 100vh;
-    }
+    background-image: url("https://images.unsplash.com/flagged/photo-1563536310477-c7b4e3a800c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80");
+    background-size: cover;
+    position: fixed;
   }
 
   .right {
     padding: $lg-size $x5l-size;
+    margin-left: $image-width;
     flex-grow: 1;
   }
 
