@@ -112,10 +112,11 @@ body {
       display: inline-flex;
       margin: $xxxl-size auto $xl-size auto;
       font-size: $sm-size;
+      flex-wrap: wrap;
+      justify-content: center;
       opacity: 0.7;
 
       > div {
-        flex-grow: 1;
         display: flex;
         align-items: center;
 
