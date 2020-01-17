@@ -1,5 +1,5 @@
 :root {
-  font-size: 16px; }
+  font-size: 18px; }
 
 h1 {
   font-size: 5.61rem;
@@ -34,7 +34,7 @@ body {
     width: 42.86%;
     height: 100vh;
     box-shadow: 5px 0 5px -5px #ccc;
-    background-image: url("https://images.unsplash.com/flagged/photo-1563536310477-c7b4e3a800c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80");
+    background-image: url("assets/photo-2.jpeg");
     background-size: cover;
     position: fixed; }
   body .right {
@@ -84,14 +84,14 @@ body {
     body .section .experience {
       margin-bottom: 3.157rem; }
       body .section .experience .manager {
-        font-size: 0.875rem; }
+        font-size: 0.75rem; }
         body .section .experience .manager span:first-child {
           font-weight: bold; }
         body .section .experience .manager span:last-child {
           font-style: italic; }
     body .section .duration {
       text-align: right;
-      font-size: 0.875rem; }
+      font-size: 0.75rem; }
     body .section .language-table {
       width: 500px;
       border: solid 1px #eee;
@@ -126,7 +126,7 @@ body {
   body .chips {
     display: flex;
     flex-wrap: wrap;
-    font-size: .75rem; }
+    font-size: 0.75rem; }
     body .chips .chip {
       cursor: pointer;
       background: #636363;

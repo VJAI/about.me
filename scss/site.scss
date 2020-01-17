@@ -27,7 +27,7 @@ $h2-font-size:                $xxl-size;
 $h3-font-size:                $lg-size;
 $h4-font-size:                $md-size;
 
-$base-font-size:              16px;
+$base-font-size:              18px;
 $heading-letter-spacing:      2px;
 
 $image-width:                 42.86%;
@@ -75,7 +75,7 @@ body {
     width: $image-width;
     height: 100vh;
     box-shadow: 5px 0 5px -5px #ccc;
-    background-image: url("https://images.unsplash.com/flagged/photo-1563536310477-c7b4e3a800c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80");
+    background-image: url("assets/photo-2.jpeg");
     background-size: cover;
     position: fixed;
   }
@@ -155,7 +155,7 @@ body {
       margin-bottom: $xxxl-size;
 
       .manager {
-        font-size: 0.875rem;
+        font-size: $sm-size;
 
         span:first-child {
           font-weight: bold;
@@ -169,7 +169,7 @@ body {
 
     .duration {
       text-align: right;
-      font-size: 0.875rem;
+      font-size: $sm-size;
     }
 
     .language-table {
@@ -229,7 +229,7 @@ body {
   .chips {
     display: flex;
     flex-wrap: wrap;
-    font-size: .75rem;
+    font-size: $sm-size;
 
     .chip {
       cursor: pointer;
