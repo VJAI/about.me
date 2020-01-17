@@ -28,18 +28,17 @@ body {
   background-color: #fafafa;
   color: #636363;
   display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0; }
   body .left {
-    width: 42.86%;
+    width: 100%;
     height: 100vh;
     box-shadow: 5px 0 5px -5px #ccc;
     background-image: url("assets/photo-2.jpeg");
-    background-size: cover;
-    position: fixed; }
+    background-size: cover; }
   body .right {
     padding: 1.333rem 5.61rem;
-    margin-left: 42.86%;
     flex-grow: 1; }
   body .head {
     text-align: center;
@@ -165,3 +164,12 @@ body {
         color: #636363; }
         body .chips .chip:hover::after {
           border-left: 0.625rem solid #ffde08; }
+
+@media only screen and (min-width: 1280px) {
+  body {
+    flex-direction: row; }
+    body .left {
+      width: 42.86%;
+      position: fixed; }
+    body .right {
+      margin-left: 42.86%; } }

@@ -32,6 +32,8 @@ $heading-letter-spacing:      2px;
 
 $image-width:                 42.86%;
 
+$tablet:                      1280px;
+
 :root {
   font-size: $base-font-size;
 }
@@ -68,21 +70,20 @@ body {
   background-color: $alabaster;
   color: $dove-gray;
   display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
 
   .left {
-    width: $image-width;
+    width: 100%;
     height: 100vh;
     box-shadow: 5px 0 5px -5px #ccc;
     background-image: url("assets/photo-2.jpeg");
     background-size: cover;
-    position: fixed;
   }
 
   .right {
     padding: $lg-size $x5l-size;
-    margin-left: $image-width;
     flex-grow: 1;
   }
 
@@ -277,6 +278,22 @@ body {
           border-left: .625rem solid $yellow;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+
+  body {
+    flex-direction: row;
+
+    .left {
+      width: $image-width;
+      position: fixed;
+    }
+
+    .right {
+      margin-left: $image-width;
     }
   }
 }
