@@ -23,6 +23,9 @@ h4 {
   font-size: 1rem;
   color: #909e9a; }
 
+ul li {
+  margin-bottom: 0.238rem; }
+
 body {
   font-family: "PT Sans", sans-serif;
   background-color: #fafafa;
@@ -80,17 +83,19 @@ body {
       margin-bottom: 1rem; }
       body .section .top-row > * {
         flex-grow: 1; }
-    body .section .experience {
+    body .section .experience, body .section .education {
       margin-bottom: 3.157rem; }
-      body .section .experience .manager {
-        font-size: 0.75rem; }
-        body .section .experience .manager span:first-child {
-          font-weight: bold; }
-        body .section .experience .manager span:last-child {
-          font-style: italic; }
+    body .section .experience .manager {
+      font-size: 0.75rem;
+      color: #909e9a; }
+      body .section .experience .manager span:first-child {
+        font-weight: bold; }
+      body .section .experience .manager span:last-child {
+        font-style: italic; }
     body .section .duration {
       text-align: right;
-      font-size: 0.75rem; }
+      font-size: 0.75rem;
+      color: #909e9a; }
     body .section .language-table {
       width: 500px;
       border: solid 1px #eee;

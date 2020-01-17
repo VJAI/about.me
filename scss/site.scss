@@ -65,6 +65,10 @@ h4 {
   color: $pewter;
 }
 
+ul li {
+  margin-bottom: $x4s-size;
+}
+
 body {
   font-family: $body-font-family;
   background-color: $alabaster;
@@ -152,11 +156,14 @@ body {
       }
     }
 
-    .experience {
+    .experience, .education {
       margin-bottom: $xxxl-size;
+    }
 
+    .experience {
       .manager {
         font-size: $sm-size;
+        color: $pewter;
 
         span:first-child {
           font-weight: bold;
@@ -171,6 +178,7 @@ body {
     .duration {
       text-align: right;
       font-size: $sm-size;
+      color: $pewter;
     }
 
     .language-table {
