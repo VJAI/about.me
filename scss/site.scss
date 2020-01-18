@@ -24,6 +24,8 @@ $pewter:                      #909e9a;
 
 $white:                       #ffffff;
 $black:                       #000000;
+$gray:                        #eeeeee;
+$box-shadow:                  #cccccc;
 
 $h1-font-size:                $x5l-size;
 $h2-font-size:                $xxl-size;
@@ -84,7 +86,7 @@ body {
   .left {
     width: 100%;
     height: 100vh;
-    box-shadow: 5px 0 5px -5px #ccc;
+    box-shadow: 5px 0 5px -5px $box-shadow;
     background-image: url("assets/photo-2.jpeg");
     background-size: cover;
   }
@@ -174,8 +176,21 @@ body {
 
         .social-links {
           color: inherit;
-          opacity: 0.7;;
+          opacity: 0.7;
         }
+      }
+    }
+
+    .intro {
+      margin-bottom: $x4l-size;
+
+      p {
+        font-size: $lg-size;
+      }
+
+      p::first-letter {
+        font-size: $xxl-size;
+        font-family: $heading-font-family;
       }
     }
 
@@ -189,7 +204,7 @@ body {
       .top-row {
         display: flex;
         align-items: center;
-        margin-bottom: 1rem;
+        margin-bottom: $md-size;
 
         > * {
           flex-grow: 1;
@@ -221,26 +236,31 @@ body {
         color: $pewter;
       }
 
-      .language-table {
-        width: 500px;
-        border: solid 1px #eee;
-        border-radius: 5px;
+      .languages {
+        .language {
+          display: flex;
+          align-items: center;
+          margin-bottom: $xs-size;
 
-        thead {
-          th {
-            text-align: center;
-            border-bottom: solid 1px #eee;
-            padding: 10px;
-          }
-        }
-
-        tbody {
-          td {
-            padding: 10px;
+          div:first-child {
+            width: 12rem;
+            font-size: $lg-size;
           }
 
-          td.center {
-            text-align: center;
+          .fluency {
+            display: flex;
+
+            span {
+              width: $lg-size;
+              height: $lg-size;
+              margin-right: $md-size;
+              border: solid 2px $pewter;
+              border-radius: 50%;
+
+              &.selected {
+                background-color: $pewter;
+              }
+            }
           }
         }
       }
@@ -255,23 +275,10 @@ body {
         li {
           padding: 5px 8px;
           background-color: lighten($yellow, 20%);
-          margin-right: 1rem;
+          margin-right: $md-size;
           border-radius: 5px;
-          margin-bottom: 0.5rem;
+          margin-bottom: $sm-size;
         }
-      }
-    }
-
-    .intro {
-      margin-bottom: 4rem;
-
-      p {
-        font-size: 1.5rem;
-      }
-
-      p::first-letter {
-        font-size: 2.5rem;
-        font-family: $heading-font-family;
       }
     }
 

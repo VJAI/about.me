@@ -37,7 +37,7 @@ body {
   body .left {
     width: 100%;
     height: 100vh;
-    box-shadow: 5px 0 5px -5px #ccc;
+    box-shadow: 5px 0 5px -5px #cccccc;
     background-image: url("assets/photo-2.jpeg");
     background-size: cover; }
   body .right {
@@ -100,6 +100,13 @@ body {
         body .right .head .social-links {
           color: inherit;
           opacity: 0.7; } }
+    body .right .intro {
+      margin-bottom: 4.209rem; }
+      body .right .intro p {
+        font-size: 1.333rem; }
+      body .right .intro p::first-letter {
+        font-size: 2.369rem;
+        font-family: "Bebas Neue", cursive; }
     body .right .section {
       margin-bottom: 4.209rem; }
       body .right .section h3, body .right .section h4 {
@@ -123,18 +130,23 @@ body {
         text-align: right;
         font-size: 0.75rem;
         color: #909e9a; }
-      body .right .section .language-table {
-        width: 500px;
-        border: solid 1px #eee;
-        border-radius: 5px; }
-        body .right .section .language-table thead th {
-          text-align: center;
-          border-bottom: solid 1px #eee;
-          padding: 10px; }
-        body .right .section .language-table tbody td {
-          padding: 10px; }
-        body .right .section .language-table tbody td.center {
-          text-align: center; }
+      body .right .section .languages .language {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.563rem; }
+        body .right .section .languages .language div:first-child {
+          width: 12rem;
+          font-size: 1.333rem; }
+        body .right .section .languages .language .fluency {
+          display: flex; }
+          body .right .section .languages .language .fluency span {
+            width: 1.333rem;
+            height: 1.333rem;
+            margin-right: 1rem;
+            border: solid 2px #909e9a;
+            border-radius: 50%; }
+            body .right .section .languages .language .fluency span.selected {
+              background-color: #909e9a; }
       body .right .section .interests {
         list-style: none;
         margin: 0;
@@ -146,14 +158,7 @@ body {
           background-color: #ffec6e;
           margin-right: 1rem;
           border-radius: 5px;
-          margin-bottom: 0.5rem; }
-    body .right .intro {
-      margin-bottom: 4rem; }
-      body .right .intro p {
-        font-size: 1.5rem; }
-      body .right .intro p::first-letter {
-        font-size: 2.5rem;
-        font-family: "Bebas Neue", cursive; }
+          margin-bottom: 0.75rem; }
     body .right .chips {
       display: flex;
       flex-wrap: wrap;
