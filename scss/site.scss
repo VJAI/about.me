@@ -1,43 +1,43 @@
-$heading-font-family:         'Bebas Neue', cursive;
-$body-font-family:            'PT Sans', sans-serif;
+$heading-font-family:         'Bebas Neue', cursive !default;
+$body-font-family:            'PT Sans', sans-serif !default;
 
 // Ratio: 1.333 (4:3)
-$x5l-size:                    5.61rem;
-$x4l-size:                    4.209rem;
-$xxxl-size:                   3.157rem;
-$xxl-size:                    2.369rem;
-$xl-size:                     1.777rem;
-$lg-size:                     1.333rem;
-$md-size:                     1rem;
-$sm-size:                     0.75rem;
-$xs-size:                     0.563rem;
-$xxs-size:                    0.422rem;
-$xxxs-size:                   0.317rem;
-$x4s-size:                    0.238rem;
+$x5l-size:                    5.61rem !default;
+$x4l-size:                    4.209rem !default;
+$xxxl-size:                   3.157rem !default;
+$xxl-size:                    2.369rem !default;
+$xl-size:                     1.777rem !default;
+$lg-size:                     1.333rem !default;
+$md-size:                     1rem !default;
+$sm-size:                     0.75rem !default;
+$xs-size:                     0.563rem !default;
+$xxs-size:                    0.422rem !default;
+$xxxs-size:                   0.317rem !default;
+$x4s-size:                    0.238rem !default;
 
 // Colors
-$yellow:                      #ffde08;
-$alabaster:                   #fafafa;
-$dove-gray:                   #636363;
-$edward:                      #adb8b5;
-$pewter:                      #909e9a;
+$yellow:                      #ffde08 !default;
+$alabaster:                   #fafafa !default;
+$dove-gray:                   #636363 !default;
+$edward:                      #adb8b5 !default;
+$pewter:                      #909e9a !default;
 
-$white:                       #ffffff;
-$black:                       #000000;
-$gray:                        #eeeeee;
-$box-shadow:                  #cccccc;
+$white:                       #ffffff !default;
+$black:                       #000000 !default;
+$gray:                        #eeeeee !default;
+$box-shadow:                  #cccccc !default;
 
-$h1-font-size:                $x5l-size;
-$h2-font-size:                $xxl-size;
-$h3-font-size:                $lg-size;
-$h4-font-size:                $md-size;
+$h1-font-size:                $x5l-size !default;
+$h2-font-size:                $xxl-size !default;
+$h3-font-size:                $lg-size !default;
+$h4-font-size:                $md-size !default;
 
-$base-font-size:              18px;
-$heading-letter-spacing:      2px;
+$base-font-size:              18px !default;
+$heading-letter-spacing:      2px !default;
 
-$image-width:                 42.86%;
+$image-width:                 42.86% !default;
 
-$tablet:                      1280px;
+$tablet:                      1280px !default;
 
 :root {
   font-size: $base-font-size;
@@ -72,6 +72,17 @@ h4 {
 
 ul li {
   margin-bottom: $x4s-size;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: dotted 1px;
+  transition: color 0.250s;
+
+  &:hover, &:active {
+    color: $yellow;
+  }
 }
 
 body {
@@ -236,6 +247,40 @@ body {
         color: $pewter;
       }
 
+      .cards {
+        .card {
+          border: solid 1px $gray;
+          transition: box-shadow .1s ease-in-out;
+          background-color: $white;
+          margin-bottom: $xl-size;
+          display: flex;
+          padding: $lg-size;
+
+          .card-left {
+            margin-right: 1rem;
+
+            img {
+              border-radius: 50%;
+              border: solid 1px $gray;
+            }
+          }
+
+          .card-right {
+            flex-grow: 1;
+
+            .reputation {
+              display: flex;
+              align-items: center;
+              font-size: $sm-size;
+
+              > div:not(:last-child) {
+                margin-right: $md-size;
+              }
+            }
+          }
+        }
+      }
+
       .languages {
         .language {
           display: flex;
@@ -256,9 +301,19 @@ body {
               margin-right: $md-size;
               border: solid 2px $pewter;
               border-radius: 50%;
+              cursor: pointer;
+              transition: all 0.250s;
 
               &.selected {
                 background-color: $pewter;
+
+                &:hover {
+                  background-color: $yellow;
+                }
+              }
+
+              &:hover {
+                border-color: $yellow;
               }
             }
           }
@@ -278,6 +333,7 @@ body {
           margin-right: $md-size;
           border-radius: 5px;
           margin-bottom: $sm-size;
+          cursor: pointer;
         }
       }
     }

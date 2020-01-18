@@ -26,6 +26,14 @@ h4 {
 ul li {
   margin-bottom: 0.238rem; }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: dotted 1px;
+  transition: color 0.250s; }
+  a:hover, a:active {
+    color: #ffde08; }
+
 body {
   font-family: "PT Sans", sans-serif;
   background-color: #fafafa;
@@ -130,6 +138,26 @@ body {
         text-align: right;
         font-size: 0.75rem;
         color: #909e9a; }
+      body .right .section .cards .card {
+        border: solid 1px #eeeeee;
+        transition: box-shadow .1s ease-in-out;
+        background-color: #ffffff;
+        margin-bottom: 1.777rem;
+        display: flex;
+        padding: 1.333rem; }
+        body .right .section .cards .card .card-left {
+          margin-right: 1rem; }
+          body .right .section .cards .card .card-left img {
+            border-radius: 50%;
+            border: solid 1px #eeeeee; }
+        body .right .section .cards .card .card-right {
+          flex-grow: 1; }
+          body .right .section .cards .card .card-right .reputation {
+            display: flex;
+            align-items: center;
+            font-size: 0.75rem; }
+            body .right .section .cards .card .card-right .reputation > div:not(:last-child) {
+              margin-right: 1rem; }
       body .right .section .languages .language {
         display: flex;
         align-items: center;
@@ -144,9 +172,15 @@ body {
             height: 1.333rem;
             margin-right: 1rem;
             border: solid 2px #909e9a;
-            border-radius: 50%; }
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.250s; }
             body .right .section .languages .language .fluency span.selected {
               background-color: #909e9a; }
+              body .right .section .languages .language .fluency span.selected:hover {
+                background-color: #ffde08; }
+            body .right .section .languages .language .fluency span:hover {
+              border-color: #ffde08; }
       body .right .section .interests {
         list-style: none;
         margin: 0;
@@ -158,7 +192,8 @@ body {
           background-color: #ffec6e;
           margin-right: 1rem;
           border-radius: 5px;
-          margin-bottom: 0.75rem; }
+          margin-bottom: 0.75rem;
+          cursor: pointer; }
     body .right .chips {
       display: flex;
       flex-wrap: wrap;
