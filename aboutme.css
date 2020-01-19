@@ -39,7 +39,7 @@ a {
   border-bottom: dotted 1px;
   transition: color 0.250s; }
   a:hover, a:active {
-    color: #ffde08; }
+    color: #d4b800; }
 
 .icon {
   font-family: "fontello";
@@ -92,6 +92,7 @@ body {
       top: 0;
       left: 0;
       width: 100%;
+      height: 100vh;
       z-index: 2; }
       body .right .head h1 {
         color: #ffde08;
@@ -105,32 +106,56 @@ body {
         color: #f2f2f2; }
       body .right .head .contact-info {
         display: inline-flex;
+        flex-direction: column;
         margin: 3.157rem auto 1.777rem auto;
         font-size: 0.75rem;
         flex-wrap: wrap;
         justify-content: center;
-        color: #f2f2f2; }
-        body .right .head .contact-info > div {
+        color: #f2f2f2;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem; }
+        body .right .head .contact-info a {
           display: flex;
           align-items: center;
-          margin-bottom: 0.422rem; }
-          body .right .head .contact-info > div:after {
-            content: "|";
-            padding-right: 1.333rem;
-            padding-left: 1.333rem; }
-          body .right .head .contact-info > div:last-child:after {
+          margin-bottom: 0.422rem;
+          border-bottom: none; }
+          body .right .head .contact-info a:last-child:after {
             content: '';
             padding: 0; }
+          body .right .head .contact-info a:hover {
+            color: #ffde08; }
+    @media only screen and (min-width: 700px) {
+      body .right .head {
+        height: auto; }
+        body .right .head .contact-info {
+          position: static;
+          flex-direction: row; }
+          body .right .head .contact-info a:hover {
+            color: #d4b800; }
+          body .right .head .contact-info a:after {
+            content: "|";
+            padding-right: 1.333rem;
+            padding-left: 1.333rem; } }
     @media only screen and (min-width: 1280px) {
       body .right .scrim {
         display: none; }
       body .right .head {
-        position: static; }
+        position: static;
+        height: auto; }
         body .right .head p {
           color: inherit; }
         body .right .head .contact-info {
           color: inherit;
-          opacity: 0.7; } }
+          opacity: 0.7;
+          position: static;
+          flex-direction: row; }
+          body .right .head .contact-info a:hover {
+            color: #d4b800; }
+          body .right .head .contact-info a:after {
+            content: "|";
+            padding-right: 1.333rem;
+            padding-left: 1.333rem; } }
     body .right .intro {
       margin-bottom: 4.209rem; }
       body .right .intro p {
@@ -146,6 +171,8 @@ body {
         display: flex;
         align-items: center;
         margin-bottom: 1rem; }
+        body .right .section .top-row a {
+          border-bottom: none; }
         body .right .section .top-row > * {
           flex-grow: 1; }
       body .right .section .experience, body .right .section .education {
@@ -182,6 +209,8 @@ body {
             color: #909e9a; }
             body .right .section .cards .card .card-right .reputation > div:not(:last-child) {
               margin-right: 1rem; }
+        body .right .section .cards .card:hover {
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15); }
       body .right .section .languages .language {
         display: flex;
         align-items: center;
@@ -213,11 +242,16 @@ body {
         flex-wrap: wrap; }
         body .right .section .interests li {
           padding: 5px 8px;
-          background-color: #ffec6e;
+          background-color: #ffffff;
+          border: solid 1px #909e9a;
           margin-right: 1rem;
           border-radius: 5px;
           margin-bottom: 0.75rem;
-          cursor: pointer; }
+          cursor: pointer;
+          transition: all 0.250s; }
+          body .right .section .interests li:hover {
+            background-color: #636363;
+            color: #ffffff; }
     body .right .chips {
       display: flex;
       flex-wrap: wrap;
@@ -262,9 +296,14 @@ body {
             border-left: 0.625rem solid #ffde08; }
     body .right footer .social-links {
       text-align: center; }
-      body .right footer .social-links i {
+      body .right footer .social-links a {
         color: #636363;
-        cursor: pointer; }
+        cursor: pointer;
+        border-bottom: none; }
+        body .right footer .social-links a i {
+          font-size: 1.25rem; }
+        body .right footer .social-links a:hover {
+          color: #ffde08; }
 
 @media only screen and (min-width: 1280px) {
   body {
