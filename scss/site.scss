@@ -1,19 +1,59 @@
 $heading-font-family:         'Bebas Neue', cursive !default;
 $body-font-family:            'PT Sans', sans-serif !default;
 
+$tablet:                      1280px !default;
+$mobile:                      700px !default;
+
 // Ratio: 1.333 (4:3)
-$x5l-size:                    5.61rem !default;
-$x4l-size:                    4.209rem !default;
-$xxxl-size:                   3.157rem !default;
-$xxl-size:                    2.369rem !default;
-$xl-size:                     1.777rem !default;
-$lg-size:                     1.333rem !default;
-$md-size:                     1rem !default;
-$sm-size:                     0.75rem !default;
-$xs-size:                     0.563rem !default;
-$xxs-size:                    0.422rem !default;
-$xxxs-size:                   0.317rem !default;
-$x4s-size:                    0.238rem !default;
+
+:root {
+  --base-size: 16px;
+  --x5l-size: 5.61rem;
+  --x4l-size: 4.209rem;
+  --xxxl-size: 3.157rem;
+  --xxl-size: 2.369rem;
+  --xl-size: 1.777rem;
+  --lg-size: 1.333rem;
+  --md-size: 1rem;
+  --sm-size: 0.75rem;
+  --xs-size: 0.563rem;
+  --xxs-size: 0.422rem;
+  --xxxs-size: 0.317rem;
+  --x4s-size: 0.238rem;
+  font-size: var(--base-size);
+}
+
+@media only screen and (min-width: $mobile) {
+  :root {
+    --base-size: 19px;
+    --x5l-size: 5.61rem;
+    --x4l-size: 4.209rem;
+    --xxxl-size: 3.157rem;
+    --xxl-size: 2.369rem;
+    --xl-size: 1.777rem;
+    --lg-size: 1.333rem;
+    --md-size: 1rem;
+    --sm-size: 0.75rem;
+    --xs-size: 0.563rem;
+    --xxs-size: 0.422rem;
+    --xxxs-size: 0.317rem;
+    --x4s-size: 0.238rem;
+  }
+}
+
+$base-size:                   var(--base-size) !default;
+$x5l-size:                    var(--x5l-size) !default;
+$x4l-size:                    var(--x4l-size) !default;
+$xxxl-size:                   var(--xxxl-size) !default;
+$xxl-size:                    var(--xxl-size) !default;
+$xl-size:                     var(--xl-size) !default;
+$lg-size:                     var(--lg-size) !default;
+$md-size:                     var(--md-size) !default;
+$sm-size:                     var(--sm-size) !default;
+$xs-size:                     var(--xs-size) !default;
+$xxs-size:                    var(--xxs-size) !default;
+$xxxs-size:                   var(--xxxs-size) !default;
+$x4s-size:                    var(--x4s-size) !default;
 
 // Colors
 $yellow:                      #ffde08 !default;
@@ -37,9 +77,6 @@ $heading-letter-spacing:      2px !default;
 
 $image-width:                 42.86% !default;
 
-$tablet:                      1280px !default;
-$mobile:                      700px !default;
-
 @font-face {
   font-family: 'fontello';
   src: url('assets/icons/fontello.eot?12209906');
@@ -49,10 +86,6 @@ $mobile:                      700px !default;
   url('assets/icons/fontello.svg?12209906#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-
-:root {
-  font-size: $base-font-size;
 }
 
 h1 {
@@ -133,7 +166,7 @@ body {
   }
 
   .right {
-    padding: $lg-size $x5l-size;
+    padding: $xl-size;
     flex-grow: 1;
 
     .scrim {
@@ -511,6 +544,7 @@ body {
 
     .right {
       margin-left: $image-width;
+      padding: $lg-size $x5l-size;
     }
   }
 }
