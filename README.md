@@ -1,8 +1,6 @@
 # about.me
 
-One Page Resume Template!
-
-[Work In Progress]
+Single Page Resume Template built with the ratio of perfect fourth.
 
 [Demo](https://vjai.github.io/about.me/)
 
