@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'fontello';
+  src: url("assets/icons/fontello.eot?12209906");
+  src: url("assets/icons/fontello.eot?12209906#iefix") format("embedded-opentype"), url("assets/icons/fontello.woff?12209906") format("woff"), url("assets/icons/fontello.ttf?12209906") format("truetype"), url("assets/icons/fontello.svg?12209906#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 :root {
   font-size: 18px; }
 
@@ -33,6 +40,23 @@ a {
   transition: color 0.250s; }
   a:hover, a:active {
     color: #ffde08; }
+
+.icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -79,23 +103,22 @@ body {
         font-size: 1rem;
         font-weight: bold;
         color: #f2f2f2; }
-      body .right .head .social-links {
+      body .right .head .contact-info {
         display: inline-flex;
         margin: 3.157rem auto 1.777rem auto;
         font-size: 0.75rem;
         flex-wrap: wrap;
         justify-content: center;
         color: #f2f2f2; }
-        body .right .head .social-links > div {
+        body .right .head .contact-info > div {
           display: flex;
-          align-items: center; }
-          body .right .head .social-links > div:after {
+          align-items: center;
+          margin-bottom: 0.422rem; }
+          body .right .head .contact-info > div:after {
             content: "|";
             padding-right: 1.333rem;
             padding-left: 1.333rem; }
-          body .right .head .social-links > div .icon {
-            margin-right: 0.25rem; }
-          body .right .head .social-links > div:last-child:after {
+          body .right .head .contact-info > div:last-child:after {
             content: '';
             padding: 0; }
     @media only screen and (min-width: 1280px) {
@@ -105,7 +128,7 @@ body {
         position: static; }
         body .right .head p {
           color: inherit; }
-        body .right .head .social-links {
+        body .right .head .contact-info {
           color: inherit;
           opacity: 0.7; } }
     body .right .intro {
@@ -155,7 +178,8 @@ body {
           body .right .section .cards .card .card-right .reputation {
             display: flex;
             align-items: center;
-            font-size: 0.75rem; }
+            font-size: 0.75rem;
+            color: #909e9a; }
             body .right .section .cards .card .card-right .reputation > div:not(:last-child) {
               margin-right: 1rem; }
       body .right .section .languages .language {
@@ -236,6 +260,11 @@ body {
           color: #636363; }
           body .right .chips .chip:hover::after {
             border-left: 0.625rem solid #ffde08; }
+    body .right footer .social-links {
+      text-align: center; }
+      body .right footer .social-links i {
+        color: #636363;
+        cursor: pointer; }
 
 @media only screen and (min-width: 1280px) {
   body {
