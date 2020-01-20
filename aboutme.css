@@ -1,11 +1,11 @@
 :root {
   --base-size: 16px;
-  --x5l-size: 5.61rem;
-  --x4l-size: 4.209rem;
-  --xxxl-size: 3.157rem;
-  --xxl-size: 2.369rem;
-  --xl-size: 1.777rem;
-  --lg-size: 1.333rem;
+  --x5l-size: 5rem;
+  --x4l-size: 3.75rem;
+  --xxxl-size: 2.8125rem;
+  --xxl-size: 2.125rem;
+  --xl-size: 1.5625rem;
+  --lg-size: 1.1875rem;
   --md-size: 1rem;
   --sm-size: 0.75rem;
   --xs-size: 0.563rem;
@@ -50,17 +50,22 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   border-bottom: dashed 4px #ffde08;
   font-size: var(--xxl-size);
+  margin-bottom: var(--xl-size);
   color: #adb8b5; }
 
 h3 {
-  font-size: var(--lg-size); }
+  font-size: var(--lg-size);
+  margin-bottom: var(--md-size); }
 
 h4 {
   font-size: var(--md-size);
-  color: #909e9a; }
+  color: #909e9a;
+  margin-bottom: var(--sm-size); }
 
-ul li {
-  margin-bottom: var(--x4s-size); }
+ul {
+  padding-left: 0; }
+  ul li {
+    margin-bottom: var(--x4s-size); }
 
 a {
   text-decoration: none;
@@ -116,7 +121,7 @@ body {
       opacity: 0.3; }
     body .right .head {
       text-align: center;
-      margin: var(--xxl-size) 0 var(--x4l-size) 0;
+      margin: var(--xxl-size) 0;
       position: absolute;
       top: 0;
       left: 0;
@@ -228,7 +233,8 @@ body {
           margin-right: 1rem; }
           body .right .section .cards .card .card-left img {
             border-radius: 50%;
-            border: solid 1px #eeeeee; }
+            border: solid 1px #eeeeee;
+            width: var(--x5l-size); }
         body .right .section .cards .card .card-right {
           flex-grow: 1; }
           body .right .section .cards .card .card-right .reputation {

@@ -6,14 +6,15 @@ $mobile:                      700px !default;
 
 // Ratio: 1.333 (4:3)
 
+// Interval - 3
 :root {
   --base-size: 16px;
-  --x5l-size: 5.61rem;
-  --x4l-size: 4.209rem;
-  --xxxl-size: 3.157rem;
-  --xxl-size: 2.369rem;
-  --xl-size: 1.777rem;
-  --lg-size: 1.333rem;
+  --x5l-size: 5rem;
+  --x4l-size: 3.75rem;
+  --xxxl-size: 2.8125rem;
+  --xxl-size: 2.125rem;
+  --xl-size: 1.5625rem;
+  --lg-size: 1.1875rem;
   --md-size: 1rem;
   --sm-size: 0.75rem;
   --xs-size: 0.563rem;
@@ -23,6 +24,7 @@ $mobile:                      700px !default;
   font-size: var(--base-size);
 }
 
+// Interval - 1
 @media only screen and (min-width: $mobile) {
   :root {
     --base-size: 19px;
@@ -103,20 +105,27 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   border-bottom: dashed 4px $yellow;
   font-size: $h2-font-size;
+  margin-bottom: $xl-size;
   color: $edward;
 }
 
 h3 {
   font-size: $h3-font-size;
+  margin-bottom: $md-size;
 }
 
 h4 {
   font-size: $h4-font-size;
   color: $pewter;
+  margin-bottom: $sm-size;
 }
 
-ul li {
-  margin-bottom: $x4s-size;
+ul {
+  padding-left: 0;
+
+  li {
+    margin-bottom: $x4s-size;
+  }
 }
 
 a {
@@ -183,7 +192,7 @@ body {
 
     .head {
       text-align: center;
-      margin: $xxl-size 0 $x4l-size 0;
+      margin: $xxl-size 0;
       position: absolute;
       top: 0;
       left: 0;
@@ -368,6 +377,7 @@ body {
             img {
               border-radius: 50%;
               border: solid 1px $gray;
+              width: $x5l-size;
             }
           }
 
