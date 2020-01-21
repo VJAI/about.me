@@ -58,12 +58,16 @@ $xxxs-size:                   var(--xxxs-size) !default;
 $x4s-size:                    var(--x4s-size) !default;
 
 // Colors
-$yellow:                      #ffde08 !default;
+// Primary
+$brand-color:                 #ffde08 !default;
+
+// Secondary
 $alabaster:                   #fafafa !default;
 $dove-gray:                   #636363 !default;
 $edward:                      #adb8b5 !default;
 $pewter:                      #909e9a !default;
 
+// Tertiary
 $white:                       #ffffff !default;
 $black:                       #000000 !default;
 $gray:                        #eeeeee !default;
@@ -103,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  border-bottom: dashed 4px $yellow;
+  border-bottom: dashed 4px $brand-color;
   font-size: $h2-font-size;
   margin-bottom: $xl-size;
   color: $edward;
@@ -135,7 +139,7 @@ a {
   transition: color 0.250s;
 
   &:hover, &:active {
-    color: darken($yellow, 10%);
+    color: darken($brand-color, 10%);
   }
 }
 
@@ -201,7 +205,7 @@ body {
       z-index: 2;
 
       h1 {
-        color: $yellow;
+        color: $brand-color;
         text-shadow: 1px 1px $edward;
       }
 
@@ -240,7 +244,7 @@ body {
           }
 
           &:hover {
-            color: $yellow;
+            color: $brand-color;
           }
         }
       }
@@ -256,7 +260,7 @@ body {
 
           a {
             &:hover {
-              color: darken($yellow, 10%);
+              color: darken($brand-color, 10%);
             }
 
             &:after {
@@ -290,7 +294,7 @@ body {
 
           a {
             &:hover {
-              color: darken($yellow, 10%);
+              color: darken($brand-color, 10%);
             }
 
             &:after {
@@ -429,12 +433,12 @@ body {
                 background-color: $pewter;
 
                 &:hover {
-                  background-color: $yellow;
+                  background-color: $brand-color;
                 }
               }
 
               &:hover {
-                border-color: $yellow;
+                border-color: $brand-color;
               }
             }
           }
@@ -510,11 +514,11 @@ body {
         }
 
         &:hover {
-          background-color: $yellow;
+          background-color: $brand-color;
           color: $dove-gray;
 
           &::after {
-            border-left: .625rem solid $yellow;
+            border-left: .625rem solid $brand-color;
           }
         }
       }
@@ -534,7 +538,7 @@ body {
           }
 
           &:hover {
-            color: $yellow;
+            color: $brand-color;
           }
         }
       }
@@ -554,7 +558,7 @@ body {
 
     .right {
       margin-left: $image-width;
-      padding: $lg-size $x5l-size;
+      padding: $lg-size $xxxl-size;
     }
   }
 }

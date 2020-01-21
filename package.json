@@ -4,14 +4,16 @@
 	"description": "Single page web template",
 	"main": "gulpfile.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "gulp",
+		"build": "gulp sass"
 	},
+	"keywords": ["template", "resume", "cv"],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/VJAI/about.me.git"
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "Vijaya Anand <vijay.prideparrot@gmail.com>",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/VJAI/about.me/issues"
 	},
