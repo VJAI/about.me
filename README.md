@@ -41,6 +41,10 @@ Please send email to vijay.prideparrot AT gmail.com.
 
 ## Screenshots
 
+### Desktop
+
 ![Screen Shot](https://github.com/VJAI/about.me/blob/master/ScreenShot-1.png)
+
+### Mobile
 
 ![Screen Shot](https://github.com/VJAI/about.me/blob/master/ScreenShot-2.png)
