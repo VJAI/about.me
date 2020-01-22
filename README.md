@@ -1,4 +1,6 @@
-![Screen Shot](https://github.com/VJAI/about.me/blob/master/logo.png)
+<p align="center">
+  <img src="https://github.com/VJAI/about.me/blob/master/logo.png" />
+</p>
 
 # about.me
 
