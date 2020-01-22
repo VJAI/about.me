@@ -14,7 +14,7 @@
   --x4s-size: 0.238rem;
   font-size: var(--base-size); }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1500px) {
   :root {
     --base-size: 19px;
     --x5l-size: 5.61rem;
@@ -281,7 +281,7 @@ body {
           border: solid 1px #909e9a;
           margin-right: var(--md-size);
           border-radius: 5px;
-          margin-bottom: var(--sm-size);
+          margin-bottom: var(--xs-size);
           cursor: pointer;
           transition: all 0.250s; }
           body .right .section .interests li:hover {

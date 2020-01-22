@@ -1,8 +1,9 @@
 $heading-font-family:         'Bebas Neue', cursive !default;
 $body-font-family:            'PT Sans', sans-serif !default;
 
-$tablet:                      1280px !default;
 $mobile:                      700px !default;
+$dektop:                      1280px !default;
+$extra-large:                 1500px !default;
 
 // Ratio: 1.333 (4:3)
 
@@ -25,7 +26,7 @@ $mobile:                      700px !default;
 }
 
 // Interval - 1
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: $extra-large) {
   :root {
     --base-size: 19px;
     --x5l-size: 5.61rem;
@@ -273,7 +274,7 @@ body {
       }
     }
 
-    @media only screen and (min-width: $tablet) {
+    @media only screen and (min-width: $dektop) {
       .scrim {
         display: none;
       }
@@ -458,7 +459,7 @@ body {
           border: solid 1px $pewter;
           margin-right: $md-size;
           border-radius: 5px;
-          margin-bottom: $sm-size;
+          margin-bottom: $xs-size;
           cursor: pointer;
           transition: all 0.250s;
 
@@ -546,7 +547,7 @@ body {
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: $dektop) {
 
   body {
     flex-direction: row;
