@@ -1,3 +1,5 @@
+![Screen Shot](https://github.com/VJAI/about.me/blob/master/logo.png)
+
 # about.me
 
 Mobile-friendly single page resume template built with the ratio of perfect fourth.
