@@ -47,14 +47,6 @@ npm start
 
 - Save the changes and GitHub will display the URL through which you can access the resume in the same section and it would be something like <github_user_name>.github.io/about.me. Hit the url and verify you can access the page.
 
-## License
-
-MIT
-
-## Questions & Feedback
-
-Please send email to vijay.prideparrot AT gmail.com.
-
 ## Screenshots
 
 ### Desktop
@@ -64,3 +56,11 @@ Please send email to vijay.prideparrot AT gmail.com.
 ### Mobile
 
 ![Screen Shot](https://github.com/VJAI/about.me/blob/master/ScreenShot-2.png)
+
+## License
+
+MIT
+
+## Questions & Feedback
+
+Please send email to vijay.prideparrot AT gmail.com.

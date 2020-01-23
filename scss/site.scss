@@ -84,6 +84,8 @@ $heading-letter-spacing:      2px !default;
 
 $image-width:                 42.86% !default;
 
+$photo:                       "assets/photo-2.jpeg" !default;
+
 @font-face {
   font-family: 'fontello';
   src: url('assets/icons/fontello.eot?12209906');
@@ -175,7 +177,7 @@ body {
     width: 100%;
     height: 100vh;
     box-shadow: 5px 0 5px -5px $box-shadow;
-    background-image: url("assets/photo-2.jpeg");
+    background-image: url($photo);
     background-size: cover;
   }
 
