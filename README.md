@@ -39,7 +39,11 @@ npm start
 
 - Check-in your changes and go to your project "Settings" in Github.
 
+![Screen Shot](https://github.com/VJAI/about.me/blob/master/Github_Settings.png)
+
 - Navigate to the GitHub Pages section and open the "Source" dropdown. Select the option "master branch".
+
+![Screen Shot](https://github.com/VJAI/about.me/blob/master/Github_Pages.png)
 
 - Save the changes and GitHub will display the URL through which you can access the resume in the same section and it would be something like <github_user_name>.github.io/about.me. Hit the url and verify you can access the page.
 
