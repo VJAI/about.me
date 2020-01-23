@@ -4,7 +4,7 @@
 
 # about.me
 
-Mobile-friendly single page resume template built with the ratio of perfect fourth.
+Mobile-friendly single page resume template built with the perfect fourth ratio.
 
 ## Demo
 
@@ -17,23 +17,31 @@ Mobile-friendly single page resume template built with the ratio of perfect four
 - Firefox
 - Edge
 
-## Development
+## Make Your Resume Online in X Steps (Without Paying For Domain)
 
-Fork the repo or download the source-code and then open the terminal at the root of the project and run,
+- Fork the repo and clone it in your local machine.
+
+- Run the below command from project root to install all the dependencies.
 
 ```
 npm install
 ```
 
-Once the necessary packages are installed run the website using the below command.
+- Once the necessary packages are installed run the website using the below command.
 
 ```
 npm start
 ```
 
-## Customization
+- Edit the `index.html` and replace the default text with your career information.
 
-You can customize the theme by changing the variables in `_site.scss` file under "scss" folder.
+- Feel free to customize the theme by changing the variables in `_site.scss` file under "scss" folder.
+
+- Check-in your changes and go to your project "Settings" in Github.
+
+- Navigate to the GitHub Pages section and open the "Source" dropdown. Select the option "master branch".
+
+- Save the changes and GitHub will display the URL through which you can access the resume in the same section and it would be something like <github_user_name>.github.io/about.me. Hit the url and verify you can access the page.
 
 ## License
 
