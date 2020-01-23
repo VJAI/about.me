@@ -17,7 +17,7 @@ Mobile-friendly single page resume template built with the perfect fourth ratio.
 - Firefox
 - Edge
 
-## Make Your Resume Online in X Steps (Without Paying For Domain)
+## Make Your Resume Online in 8 Steps (Without Paying For Domain)
 
 - Fork the repo and clone it in your local machine.
 
