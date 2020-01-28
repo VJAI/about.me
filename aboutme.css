@@ -169,7 +169,7 @@ body {
             content: "|";
             padding-right: var(--lg-size);
             padding-left: var(--lg-size); } }
-    @media only screen and (min-width: 1280px) {
+    @media only screen and (min-width: 1080px) {
       body .right .scrim {
         display: none; }
       body .right .head {
@@ -338,7 +338,7 @@ body {
         body .right footer .social-links a:hover {
           color: #ffde08; }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1080px) {
   body {
     flex-direction: row; }
     body .left {
