@@ -62,10 +62,8 @@ h4 {
   color: #909e9a;
   margin-bottom: var(--sm-size); }
 
-ul {
-  padding-left: 0; }
-  ul li {
-    margin-bottom: var(--x4s-size); }
+ul li {
+  margin-bottom: var(--x4s-size); }
 
 a {
   text-decoration: none;
