@@ -228,7 +228,7 @@ body {
         display: flex;
         padding: var(--lg-size); }
         body .right .section .cards .card .card-left {
-          margin-right: 1rem; }
+          margin-right: var(--md-size); }
           body .right .section .cards .card .card-left img {
             border-radius: 50%;
             border: solid 1px #eeeeee;
@@ -334,7 +334,7 @@ body {
         cursor: pointer;
         border-bottom: none; }
         body .right footer .social-links a i {
-          font-size: 1.25rem; }
+          font-size: var(--lg-size); }
         body .right footer .social-links a:hover {
           color: #ffde08; }
 

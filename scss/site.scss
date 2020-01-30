@@ -377,7 +377,7 @@ body {
           padding: $lg-size;
 
           .card-left {
-            margin-right: 1rem;
+            margin-right: $md-size;
 
             img {
               border-radius: 50%;
@@ -535,7 +535,7 @@ body {
           border-bottom: none;
 
           i {
-            font-size: 1.25rem;
+            font-size: $lg-size;
           }
 
           &:hover {
