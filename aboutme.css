@@ -194,7 +194,8 @@ body {
         font-size: var(--lg-size); }
       body .right .intro p::first-letter {
         font-size: var(--xxl-size);
-        font-family: "Bebas Neue", cursive; }
+        font-family: "Bebas Neue", cursive;
+        line-height: 1; }
     body .right .section {
       margin-bottom: var(--x4l-size); }
       body .right .section h3, body .right .section h4 {

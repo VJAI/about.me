@@ -177,6 +177,7 @@ body {
     box-shadow: 5px 0 5px -5px $box-shadow;
     background-image: url($photo);
     background-size: cover;
+    background-position: center;
   }
 
   .right {
@@ -318,6 +319,7 @@ body {
       p::first-letter {
         font-size: $xxl-size;
         font-family: $heading-font-family;
+        line-height: 1;
       }
     }
 
