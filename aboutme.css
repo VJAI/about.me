@@ -1,34 +1,34 @@
 :root {
   --base-size: 16px;
-  --x5l-size: 5rem;
-  --x4l-size: 3.75rem;
-  --xxxl-size: 2.8125rem;
-  --xxl-size: 2.125rem;
-  --xl-size: 1.5625rem;
+  --x5l-size: 4.1875rem;
+  --x4l-size: 2.635rem;
+  --xxxl-size: 2.125rem;
+  --xxl-size: 1.75rem;
+  --xl-size: 1.4375rem;
   --lg-size: 1.1875rem;
   --md-size: 1rem;
-  --sm-size: 0.75rem;
-  --xs-size: 0.563rem;
-  --xxs-size: 0.422rem;
-  --xxxs-size: 0.317rem;
-  --x4s-size: 0.238rem;
+  --sm-size: 0.8125rem;
+  --xs-size: 0.8125rem;
+  --xxs-size: 0.6875rem;
+  --xxxs-size: 0.5625rem;
+  --x4s-size: 0.4375rem;
   font-size: var(--base-size); }
 
 @media only screen and (min-width: 1500px) {
   :root {
     --base-size: 19px;
-    --x5l-size: 5.61rem;
-    --x4l-size: 4.209rem;
-    --xxxl-size: 3.157rem;
-    --xxl-size: 2.369rem;
-    --xl-size: 1.777rem;
-    --lg-size: 1.333rem;
+    --x5l-size: 4.63rem;
+    --x4l-size: 2.63rem;
+    --xxxl-size: 2.16rem;
+    --xxl-size: 1.79rem;
+    --xl-size: 1.47rem;
+    --lg-size: 1.21rem;
     --md-size: 1rem;
-    --sm-size: 0.75rem;
-    --xs-size: 0.563rem;
-    --xxs-size: 0.422rem;
-    --xxxs-size: 0.317rem;
-    --x4s-size: 0.238rem; } }
+    --sm-size: 0.84rem;
+    --xs-size: 0.68rem;
+    --xxs-size: 0.58rem;
+    --xxxs-size: 0.47rem;
+    --x4s-size: 0.37rem; } }
 
 @font-face {
   font-family: 'fontello';
@@ -228,7 +228,7 @@ body {
         border: solid 1px #eeeeee;
         transition: box-shadow .1s ease-in-out;
         background-color: #ffffff;
-        margin-bottom: var(--xl-size);
+        margin-bottom: var(--lg-size);
         display: flex;
         padding: var(--lg-size); }
         body .right .section .cards .card .card-left {
