@@ -35,7 +35,7 @@ npm start
 
 - Edit the `index.html` and replace the default text with your career information.
 
-- Edit the photo and customize the theme by changing the variables in `_site.scss` file under "scss" folder.
+- Edit the photo and customize the theme by changing the variables in `site.scss` file under "scss" folder.
 
 - Check-in your changes and go to your project "Settings" in Github.
 
