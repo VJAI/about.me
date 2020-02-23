@@ -103,7 +103,8 @@ body {
     height: 100vh;
     box-shadow: 5px 0 5px -5px #cccccc;
     background-image: url("assets/photo-2.jpeg");
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   body .right {
     padding: var(--xl-size);
     flex-grow: 1; }
@@ -204,6 +205,8 @@ body {
         display: flex;
         align-items: center;
         margin-bottom: var(--md-size); }
+        body .right .section .top-row h3 {
+          margin-right: var(--x4s-size); }
         body .right .section .top-row a {
           border-bottom: none; }
         body .right .section .top-row > * {

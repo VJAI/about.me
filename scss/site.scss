@@ -335,6 +335,10 @@ body {
         align-items: center;
         margin-bottom: $md-size;
 
+        h3 {
+          margin-right: $x4s-size;
+        }
+
         a {
           border-bottom: none;
         }
