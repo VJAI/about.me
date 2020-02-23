@@ -129,6 +129,16 @@ h4 {
 }
 
 ul {
+  padding-left: $xxl-size;
+
+  @media only screen and (min-width: $dektop) {
+    padding-left: $xxxl-size;
+  }
+
+  @media only screen and (min-width: $dektop) {
+    padding-left: $x4l-size;
+  }
+
   li {
     margin-bottom: $x4s-size;
   }

@@ -62,8 +62,16 @@ h4 {
   color: #909e9a;
   margin-bottom: var(--sm-size); }
 
-ul li {
-  margin-bottom: var(--x4s-size); }
+ul {
+  padding-left: var(--xxl-size); }
+  @media only screen and (min-width: 1080px) {
+    ul {
+      padding-left: var(--xxxl-size); } }
+  @media only screen and (min-width: 1080px) {
+    ul {
+      padding-left: var(--x4l-size); } }
+  ul li {
+    margin-bottom: var(--x4s-size); }
 
 a {
   text-decoration: none;
