@@ -49,6 +49,10 @@ npm start
 
 - Save the changes and GitHub will display the URL through which you can access the resume in the same section and it would be something like **https://<github_user_name>.github.io**. Hit the url and verify you can access the page.
 
+## Icons
+
+For more icons please use [fontello](http://fontello.com/).
+
 ## Screenshots
 
 ### Desktop
