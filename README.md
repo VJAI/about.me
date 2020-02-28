@@ -2,7 +2,7 @@
   <img src="https://github.com/VJAI/about.me/blob/master/logo.png" />
 </p>
 
-# about.me
+# about.me (என்னை பற்றி)
 
 Mobile-friendly single page resume template built with the perfect fourth ratio.
 
