@@ -189,6 +189,7 @@ body {
     background-image: url($photo);
     background-size: cover;
     background-position: center;
+    filter: grayscale(90%);
   }
 
   .right {

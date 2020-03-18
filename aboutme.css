@@ -112,7 +112,8 @@ body {
     box-shadow: 5px 0 5px -5px #cccccc;
     background-image: url("assets/photo-2.jpeg");
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    filter: grayscale(90%); }
   body .right {
     padding: var(--xl-size);
     flex-grow: 1; }
