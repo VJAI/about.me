@@ -113,7 +113,10 @@ body {
     background-image: url("assets/photo-2.jpeg");
     background-size: cover;
     background-position: center;
-    filter: grayscale(90%); }
+    filter: grayscale(90%);
+    transition: filter 0.5s; }
+    body .left:hover {
+      filter: none; }
   body .right {
     padding: var(--xl-size);
     flex-grow: 1; }
