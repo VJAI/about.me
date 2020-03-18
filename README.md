@@ -2,7 +2,7 @@
   <img src="https://github.com/VJAI/about.me/blob/master/logo.png" />
 </p>
 
-# about.me
+# about.me (என்னை பற்றி)
 
 Mobile-friendly single page resume template built with the perfect fourth ratio.
 
@@ -48,6 +48,10 @@ npm start
 ![Screen Shot](https://github.com/VJAI/about.me/blob/master/Github_Pages.png)
 
 - Save the changes and GitHub will display the URL through which you can access the resume in the same section and it would be something like **https://<github_user_name>.github.io**. Hit the url and verify you can access the page.
+
+## Icons
+
+For more icons please use [fontello](http://fontello.com/).
 
 ## Screenshots
 
