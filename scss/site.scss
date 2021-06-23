@@ -8,40 +8,39 @@ $extra-large:                 1500px !default;
 // Ratio: 1.333 (4:3)
 // Interval - 3
 
-// 0.375 rem | 0.4375 rem | 0.4375 rem | 0.5 rem | 0.5625 rem | 0.625 rem | 0.6875 rem | 0.75 rem | 0.8125 rem | 0.9375 rem | 1 rem | 1.125 rem | 1.1875 rem | 1.3125 rem | 1.4375 rem | 1.625 rem | 1.75 rem | 1.9375 rem | 2.125 rem | 2.375 rem | 2.625 rem | 2.875 rem | 3.1875 rem | 3.5 rem | 3.8125 rem | 4.1875 rem | 4.625 rem | 5.125 rem | 5.625 rem | 6.1875rem
+// 0.384rem 0.422rem 0.465rem 0.511rem 0.563rem 0.619rem 0.682rem 0.750rem 0.826rem 0.909rem 1.000rem 1.101rem 1.211rem 1.333rem 1.467rem 1.615rem 1.777rem 1.956rem 2.152rem 2.369rem 2.607rem 2.869rem 3.157rem 3.475rem 3.824rem 4.209rem 4.632rem 5.098rem 5.610rem 6.174rem
 :root {
   --base-size: 16px;
-  --x5l-size: 4.1875rem;
-  --x4l-size: 2.635rem;
-  --xxxl-size: 2.125rem;
-  --xxl-size: 1.75rem;
-  --xl-size: 1.4375rem;
-  --lg-size: 1.1875rem;
+  --x5l-size: 4.209rem;
+  --x4l-size: 2.869rem;
+  --xxxl-size: 2.152rem;
+  --xxl-size: 1.777rem;
+  --xl-size: 1.467rem;
+  --lg-size: 1.211rem;
   --md-size: 1rem;
-  --sm-size: 0.8125rem;
-  --xs-size: 0.8125rem;
-  --xxs-size: 0.6875rem;
-  --xxxs-size: 0.5625rem;
-  --x4s-size: 0.4375rem;
+  --sm-size: 0.826rem;
+  --xs-size: 0.826rem;
+  --xxs-size: 0.682rem;
+  --xxxs-size: 0.563rem;
+  --x4s-size: 0.422rem;
   font-size: var(--base-size);
 }
 
-// 0.37 rem | 0.42 rem | 0.47 rem | 0.53 rem | 0.58 rem | 0.63 rem | 0.68 rem | 0.74 rem | 0.84 rem | 0.89 rem | 1.00 rem | 1.11 rem | 1.21 rem | 1.32 rem | 1.47 rem | 1.63 rem | 1.79 rem | 1.95 rem | 2.16 rem | 2.37 rem | 2.63 rem | 2.89 rem | 3.16 rem | 3.47 rem | 3.84 rem | 4.21 rem | 4.63 rem | 5.11 rem | 5.63 rem | 6.16
 @media only screen and (min-width: $extra-large) {
   :root {
     --base-size: 19px;
-    --x5l-size: 4.63rem;
-    --x4l-size: 2.63rem;
-    --xxxl-size: 2.16rem;
-    --xxl-size: 1.79rem;
-    --xl-size: 1.47rem;
-    --lg-size: 1.21rem;
+    --x5l-size: 4.632rem;
+    --x4l-size: 2.607rem;
+    --xxxl-size: 2.152rem;
+    --xxl-size: 1.777rem;
+    --xl-size: 1.467rem;
+    --lg-size: 1.211rem;
     --md-size: 1rem;
-    --sm-size: 0.84rem;
-    --xs-size: 0.68rem;
-    --xxs-size: 0.58rem;
-    --xxxs-size: 0.47rem;
-    --x4s-size: 0.37rem;
+    --sm-size: 0.826rem;
+    --xs-size: 0.682rem;
+    --xxs-size: 0.619rem;
+    --xxxs-size: 0.465rem;
+    --x4s-size: 0.384rem;
   }
 }
 
